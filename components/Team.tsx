@@ -1,58 +1,46 @@
+
 "use client";
-import { useLocale } from '@/lib/i18n';
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
+import { useLocale } from "@/lib/i18n";
+import SectionHeading from "./SectionHeading";
 
 export default function Team() {
   const { t } = useLocale();
-  const members = t('team.members') as Array<{name: string, role: string, bio: string, image: string}>;
+  const items = t("team.items") as { name: string; role: string; bio: string; imageUrl: string }[];
 
   return (
-    <section className="py-24 bg-bg-light relative">
+    <section className="py-24 bg-bg-tint">
       <div className="max-w-7xl mx-auto px-6">
-        
-        <div className="mb-16 max-w-3xl">
-          <span className="text-accent font-bold tracking-[0.2em] uppercase text-xs mb-4 block">
-            {t('team.badge')}
-          </span>
-          <h2 className="text-4xl md:text-5xl font-display font-medium text-primary mb-6">
-            {t('team.title')}
-          </h2>
-          <div className="w-20 h-[2px] bg-accent mb-6" />
-          <p className="text-text-muted text-lg">
-            {t('team.subtitle')}
-          </p>
-        </div>
+        <SectionHeading 
+          badge={t("team.badge")}
+          title={t("team.title")}
+        />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {members.map((member, i) => (
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+          {items.map((member, i) => (
             <motion.div 
               key={i}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="group"
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.1 }}
+              className="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow group"
             >
-              <div className="relative aspect-[3/4] rounded-2xl overflow-hidden mb-6 shadow-lg shadow-primary/10">
+              <div className="h-[400px] overflow-hidden">
                 <img 
-                  src={member.image} 
+                  src={member.imageUrl} 
                   alt={member.name} 
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 grayscale group-hover:grayscale-0"
+                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
                 />
               </div>
-              <h3 className="text-2xl font-display font-bold text-primary mb-1">
-                {member.name}
-              </h3>
-              <p className="text-accent font-medium text-sm tracking-wider uppercase mb-3">
-                {member.role}
-              </p>
-              <p className="text-text-muted text-sm leading-relaxed">
-                {member.bio}
-              </p>
+              <div className="p-8">
+                <p className="text-accent font-bold text-sm mb-1 uppercase tracking-wider">{member.role}</p>
+                <h3 className="text-2xl font-display font-bold text-primary mb-4">{member.name}</h3>
+                <p className="text-text-muted">{member.bio}</p>
+              </div>
             </motion.div>
           ))}
         </div>
-
       </div>
     </section>
   );

@@ -1,35 +1,28 @@
+
 "use client";
-import { useLocale } from '@/lib/i18n';
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
+import { useLocale } from "@/lib/i18n";
+import SectionHeading from "./SectionHeading";
+
+const icons: Record<string, React.ReactNode> = {
+  clock: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>,
+  fire: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M8.5 14.5A2.5 2.5 0 0011 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 11-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 002.5 2.5z"/></svg>,
+  shield: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>,
+  leaf: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M11 20A7 7 0 019.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+};
 
 export default function WhyUs() {
   const { t } = useLocale();
-  const items = t('whyUs.items') as Array<{title: string, desc: string}>;
-
-  // Custom SVGs for architectural advantages
-  const icons = [
-    <svg key="1" className="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 2L2 12h3v8h14v-8h3L12 2z" strokeLinejoin="round"/><path d="M9 20v-6h6v6" strokeLinejoin="round"/></svg>,
-    <svg key="2" className="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 8v8M8 12h8" strokeLinecap="round"/></svg>,
-    <svg key="3" className="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9" strokeLinecap="round"/></svg>,
-    <svg key="4" className="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="M3.27 6.96L12 12.01l8.73-5.05M12 22.08V12" strokeLinejoin="round"/></svg>
-  ];
+  const items = t("whyUs.items") as { icon: string; title: string; description: string }[];
 
   return (
-    <section className="py-24 bg-bg-tint relative">
+    <section className="py-24 bg-bg-light">
       <div className="max-w-7xl mx-auto px-6">
-        
-        <div className="mb-16 max-w-3xl">
-          <span className="text-accent font-bold tracking-[0.2em] uppercase text-xs mb-4 block">
-            {t('whyUs.badge')}
-          </span>
-          <h2 className="text-4xl md:text-5xl font-display font-medium text-primary mb-6">
-            {t('whyUs.title')}
-          </h2>
-          <div className="w-20 h-[2px] bg-accent mb-6" />
-          <p className="text-text-muted text-lg">
-            {t('whyUs.subtitle')}
-          </p>
-        </div>
+        <SectionHeading 
+          badge={t("whyUs.badge")}
+          title={t("whyUs.title")}
+          centered
+        />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {items.map((item, i) => (
@@ -37,23 +30,18 @@ export default function WhyUs() {
               key={i}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="bg-white rounded-2xl p-8 shadow-lg shadow-primary/5 border border-primary/5 hover:shadow-xl hover:shadow-primary/10 transition-shadow group"
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.1 }}
+              className="bg-white rounded-3xl p-8 shadow-[0_4px_20px_hsl(220_15%_90%/0.5)] border border-gray-50 hover:shadow-[0_8px_30px_hsl(220_15%_90%/0.8)] hover:-translate-y-1 transition-all group"
             >
-              <div className="w-14 h-14 rounded-full bg-bg-tint flex items-center justify-center text-accent mb-6 group-hover:bg-accent group-hover:text-white transition-colors">
-                {icons[i % icons.length]}
+              <div className="w-14 h-14 rounded-2xl bg-bg-tint flex items-center justify-center text-accent mb-6 group-hover:bg-accent group-hover:text-white transition-colors">
+                <div className="w-8 h-8">{icons[item.icon]}</div>
               </div>
-              <h3 className="text-xl font-display font-bold text-primary mb-4">
-                {item.title}
-              </h3>
-              <p className="text-text-muted leading-relaxed">
-                {item.desc}
-              </p>
+              <h3 className="text-xl font-display font-bold text-primary mb-3">{item.title}</h3>
+              <p className="text-text-muted leading-relaxed">{item.description}</p>
             </motion.div>
           ))}
         </div>
-
       </div>
     </section>
   );

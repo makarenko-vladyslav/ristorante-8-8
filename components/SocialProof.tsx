@@ -1,32 +1,33 @@
+
 "use client";
-import { useLocale } from '@/lib/i18n';
+import { motion } from "framer-motion";
+import { useLocale } from "@/lib/i18n";
 
 export default function SocialProof() {
   const { t } = useLocale();
-  
-  // Dummy high-end brand names
-  const brands = ["VOGUE LIVING", "ARCHITECTURAL DIGEST", "ELLE DECOR", "DEZEEN", "WALLPAPER*", "FRAME"];
+  const items = t("socialProof.items") as string[];
 
   return (
-    <section className="py-12 bg-white border-b border-black/5 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 mb-6 text-center">
-        <p className="text-sm font-semibold tracking-widest text-text-muted uppercase">
-          {t('socialProof.title')}
+    <section className="py-10 bg-primary border-b border-white/10 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-8">
+        <p className="text-white/60 font-medium text-sm whitespace-nowrap uppercase tracking-wider">
+          {t("socialProof.title")}
         </p>
-      </div>
-      
-      <div className="relative flex w-full">
-        {/* Gradient masks for smooth fade at edges */}
-        <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-white to-transparent z-10" />
-        <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-white to-transparent z-10" />
         
-        <div className="flex animate-marquee whitespace-nowrap items-center">
-          {/* Double array for seamless loop */}
-          {[...brands, ...brands, ...brands].map((brand, i) => (
-            <div key={i} className="mx-12 text-2xl font-display font-bold text-black/20 tracking-widest uppercase transition-colors hover:text-black/40 cursor-default">
-              {brand}
-            </div>
-          ))}
+        {/* Marquee */}
+        <div className="relative flex overflow-x-hidden w-full mask-image-linear">
+          <motion.div 
+            animate={{ x: ["0%", "-50%"] }}
+            transition={{ ease: "linear", duration: 20, repeat: Infinity }}
+            className="flex gap-16 whitespace-nowrap items-center"
+          >
+            {[...items, ...items, ...items].map((item, i) => (
+              <div key={i} className="flex items-center gap-3 text-white/50 font-display font-bold text-xl tracking-wide hover:text-white transition-colors">
+                <svg className="w-4 h-4 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3"><path d="M20 6L9 17l-5-5"/></svg>
+                {item}
+              </div>
+            ))}
+          </motion.div>
         </div>
       </div>
     </section>

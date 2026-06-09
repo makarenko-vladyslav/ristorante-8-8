@@ -1,18 +1,19 @@
+
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import SocialProof from "@/components/SocialProof";
 import About from "@/components/About";
-import Services from "@/components/Services";
+import MenuCategories from "@/components/MenuCategories";
 import WhyUs from "@/components/WhyUs";
-import Calculator from "@/components/Calculator";
 import Process from "@/components/Process";
-import BeforeAfter from "@/components/BeforeAfter";
-import Gallery from "@/components/Gallery";
 import VideoSection from "@/components/VideoSection";
-import Team from "@/components/Team";
+import Calculator from "@/components/Calculator";
+import MenuList from "@/components/MenuList";
 import Testimonials from "@/components/Testimonials";
+import Gallery from "@/components/Gallery";
+import Team from "@/components/Team";
 import FAQ from "@/components/FAQ";
-import CTABanner from "@/components/CTABanner";
+import CtaBanner from "@/components/CtaBanner";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -24,17 +25,17 @@ export default function Home() {
         <Hero />
         <SocialProof />
         <About />
-        <Services />
+        <MenuCategories />
         <WhyUs />
-        <Calculator />
         <Process />
-        <BeforeAfter />
-        <Gallery />
         <VideoSection />
-        <Team />
+        <Calculator />
+        <MenuList />
         <Testimonials />
+        <Gallery />
+        <Team />
         <FAQ />
-        <CTABanner />
+        <CtaBanner />
         <Contact />
       </main>
       <Footer />

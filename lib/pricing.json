@@ -1,14 +1,14 @@
+
 {
   "currency": "₴",
+  "estimationLogic": "range",
   "basePrices": {
-    "residential": 4500,
-    "commercial": 3800,
-    "hospitality": 5200
+    "standard": 800,
+    "premium": 1200,
+    "chef": 1800
   },
   "multipliers": {
-    "minimalism": 1.0,
-    "classic": 1.25,
-    "futuristic": 1.4
-  },
-  "estimationLogic": "range"
+    "weekend": 1.15,
+    "corkFee": 250
+  }
 }
