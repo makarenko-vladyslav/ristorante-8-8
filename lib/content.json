@@ -1,0 +1,581 @@
+{
+  "defaultLocale": "uk",
+  "locales": {
+    "uk": {
+      "meta": {
+        "title": "Lumina — Преміальна Архітектура та Дизайн Інтер'єру",
+        "description": "Біофільний дизайн, що поєднує природне світло та екологічні матеріали з безкомпромісною розкішшю. Київ.",
+        "lang": "uk"
+      },
+      "nav": {
+        "about": "Про нас",
+        "services": "Послуги",
+        "portfolio": "Портфоліо",
+        "calculator": "Вартість",
+        "contact": "Контакти"
+      },
+      "hero": {
+        "badge": "Студія Архітектури",
+        "title": "Створюємо простори, що",
+        "titleItalic": "надихають",
+        "subtitle": "Біофільний дизайн, що поєднує природне світло та екологічні матеріали з безкомпромісною розкішшю.",
+        "ctaPrimary": "Обговорити проєкт",
+        "ctaSecondary": "Дивитись портфоліо",
+        "stats": [
+          { "value": "12+", "label": "Років досвіду" },
+          { "value": "150+", "label": "Реалізованих проєктів" }
+        ]
+      },
+      "socialProof": {
+        "title": "Нам довіряють провідні бренди та видання"
+      },
+      "about": {
+        "badge": "Філософія",
+        "title": "Мистецтво жити в гармонії з простором",
+        "subtitle": "Ми не просто проєктуємо стіни. Ми створюємо середовище, яке дихає разом з вами, адаптується під ваш ритм життя та наповнює енергією кожен день.",
+        "text1": "Заснована у 2012 році, студія Lumina об'єднала найкращих архітекторів та візіонерів Києва. Наш підхід базується на принципах біофільного дизайну — глибокого зв'язку людини з природою через натуральні матеріали, світло та форми.",
+        "text2": "Кожен наш проєкт — це унікальна історія, написана мовою архітектури. Ми беремо на себе повний цикл: від першого ескізу до розстановки декору.",
+        "signature": "Олена Коваль, Засновниця"
+      },
+      "services": {
+        "badge": "Експертиза",
+        "title": "Наші напрямки",
+        "subtitle": "Комплексні рішення для приватних та комерційних об'єктів преміум-класу.",
+        "items": [
+          {
+            "title": "Архітектурне проєктування",
+            "desc": "Створення концептуальних рішень та робочої документації для приватних резиденцій.",
+            "image": "https://picsum.photos/seed/architecture-modern/800/1000"
+          },
+          {
+            "title": "Дизайн інтер'єру",
+            "desc": "Авторські інтер'єри, що відображають ваш характер та стиль життя.",
+            "image": "https://picsum.photos/seed/interior-luxury/800/1000"
+          },
+          {
+            "title": "Комерційні простори",
+            "desc": "HoReCa, офіси та бутики. Дизайн, що підвищує капіталізацію вашого бізнесу.",
+            "image": "https://picsum.photos/seed/commercial-space/800/1000"
+          }
+        ]
+      },
+      "whyUs": {
+        "badge": "Переваги",
+        "title": "Чому обирають Lumina",
+        "subtitle": "Бездоганний сервіс та увага до найменших деталей на кожному етапі співпраці.",
+        "items": [
+          {
+            "title": "Авторський нагляд",
+            "desc": "Ми контролюємо кожен етап будівництва, гарантуючи 100% відповідність результату 3D-візуалізаціям."
+          },
+          {
+            "title": "Екологічні матеріали",
+            "desc": "Використовуємо лише сертифіковані натуральні матеріали: камінь, дерево, скло та екологічні фарби."
+          },
+          {
+            "title": "Точні кошториси",
+            "desc": "Прозора фінансова звітність. Ви знаєте точну вартість реалізації ще до початку ремонтних робіт."
+          },
+          {
+            "title": "Комплектація під ключ",
+            "desc": "Прямі контракти з європейськими фабриками меблів та освітлення. Економія вашого часу та бюджету."
+          }
+        ]
+      },
+      "calculator": {
+        "badge": "Оцінка",
+        "title": "Розрахунок вартості проєкту",
+        "subtitle": "Отримайте попередню оцінку вартості дизайн-проєкту за кілька секунд.",
+        "typeLabel": "Тип об'єкту",
+        "types": {
+          "residential": "Житловий",
+          "commercial": "Комерційний",
+          "hospitality": "HoReCa"
+        },
+        "styleLabel": "Стилістика",
+        "styles": {
+          "minimalism": "Мінімалізм",
+          "classic": "Сучасна класика",
+          "futuristic": "Футуризм / Хай-тек"
+        },
+        "areaLabel": "Площа (м²)",
+        "resultLabel": "Орієнтовна вартість:",
+        "cta": "Отримати точний прорахунок"
+      },
+      "process": {
+        "badge": "Процес",
+        "title": "Як ми створюємо шедеври",
+        "subtitle": "Прозорий та структурований шлях від ідеї до готового об'єкту.",
+        "steps": [
+          {
+            "title": "Брифінг та концепція",
+            "desc": "Зустрічаємось на об'єкті, обговорюємо ваші побажання, стиль життя та бюджет. Створюємо мудборд та планувальні рішення."
+          },
+          {
+            "title": "3D-візуалізація",
+            "desc": "Розробляємо фотореалістичні візуалізації кожного приміщення. Ви побачите свій майбутній інтер'єр у деталях."
+          },
+          {
+            "title": "Робоча документація",
+            "desc": "Готуємо повний пакет креслень для будівельників: електрика, сантехніка, розгортки стін, вузли."
+          },
+          {
+            "title": "Реалізація та комплектація",
+            "desc": "Авторський нагляд за будівництвом, закупівля матеріалів, меблів та декору. Здача об'єкту під ключ."
+          }
+        ]
+      },
+      "beforeAfter": {
+        "badge": "Трансформація",
+        "title": "До та Після",
+        "subtitle": "Перетягніть слайдер, щоб побачити магію перетворення простору.",
+        "beforeLabel": "До",
+        "afterLabel": "Після",
+        "beforeImage": "https://picsum.photos/seed/raw-concrete-room/1200/800",
+        "afterImage": "https://picsum.photos/seed/luxury-living-room-finished/1200/800"
+      },
+      "gallery": {
+        "badge": "Портфоліо",
+        "title": "Вибрані роботи",
+        "subtitle": "Кожен проєкт — це відображення унікального характеру його власника.",
+        "items": [
+          { "url": "https://picsum.photos/seed/arch-1/800/800", "alt": "Вілла в лісі" },
+          { "url": "https://picsum.photos/seed/arch-2/800/1200", "alt": "Пентхаус Київ" },
+          { "url": "https://picsum.photos/seed/arch-3/1200/800", "alt": "Ресторан" },
+          { "url": "https://picsum.photos/seed/arch-4/800/800", "alt": "Офіс IT компанії" },
+          { "url": "https://picsum.photos/seed/arch-5/800/1000", "alt": "Спальня мінімалізм" },
+          { "url": "https://picsum.photos/seed/arch-6/1000/800", "alt": "Ванна кімната" }
+        ]
+      },
+      "video": {
+        "badge": "Атмосфера",
+        "title": "Відчуйте простір",
+        "subtitle": "Кінематографічний погляд на наші найкращі реалізації.",
+        "posterUrl": "https://picsum.photos/seed/video-poster-arch/1600/900"
+      },
+      "team": {
+        "badge": "Команда",
+        "title": "Творці простору",
+        "subtitle": "Архітектори та дизайнери, закохані у свою справу.",
+        "members": [
+          {
+            "name": "Олена Коваль",
+            "role": "Головний архітектор, Засновниця",
+            "bio": "15 років досвіду у проєктуванні преміальної нерухомості.",
+            "image": "https://picsum.photos/seed/architect-ceo/600/800"
+          },
+          {
+            "name": "Максим Ткаченко",
+            "role": "Арт-директор",
+            "bio": "Експерт з біофільного дизайну та інтеграції природних форм.",
+            "image": "https://picsum.photos/seed/art-director-man/600/800"
+          },
+          {
+            "name": "Анна Бойко",
+            "role": "Провідний дизайнер інтер'єру",
+            "bio": "Майстер роботи зі світлом та фактурами натурального каменю.",
+            "image": "https://picsum.photos/seed/interior-designer-woman/600/800"
+          },
+          {
+            "name": "Ігор Шевченко",
+            "role": "Керівник проєктів",
+            "bio": "Забезпечує ідеальну реалізацію та дотримання термінів.",
+            "image": "https://picsum.photos/seed/project-manager-man/600/800"
+          }
+        ]
+      },
+      "testimonials": {
+        "badge": "Відгуки",
+        "title": "Що кажуть клієнти",
+        "subtitle": "Ми пишаємося тим, що більшість нових клієнтів приходять до нас за рекомендацією.",
+        "items": [
+          {
+            "name": "Вікторія М.",
+            "role": "Власниця пентхаусу",
+            "quote": "Команда Lumina перевершила всі очікування. Вони не просто зробили гарний ремонт, вони створили простір, з якого не хочеться виходити. Кожна деталь продумана до дрібниць.",
+            "image": "https://picsum.photos/seed/client-vic/150/150",
+            "rating": 5
+          },
+          {
+            "name": "Андрій С.",
+            "role": "CEO IT компанії",
+            "quote": "Шукали студію для проєктування нового офісу на 1000 кв.м. Lumina запропонували концепцію, яка ідеально відображає дух нашої компанії. Реалізація пройшла без жодних стресів.",
+            "image": "https://picsum.photos/seed/client-andriy/150/150",
+            "rating": 5
+          },
+          {
+            "name": "Оксана Л.",
+            "role": "Ресторатор",
+            "quote": "Дизайн нашого нового ресторану став магнітом для гостей. Атмосфера, світло, акустика — все працює на ідеальний клієнтський досвід. Дякую за професіоналізм!",
+            "image": "https://picsum.photos/seed/client-oks/150/150",
+            "rating": 5
+          },
+          {
+            "name": "Дмитро К.",
+            "role": "Приватний інвестор",
+            "quote": "Співпрацюю з Lumina вже над третім об'єктом. Абсолютна довіра до їхнього смаку та технічної експертизи. Авторський нагляд знімає з мене 90% головного болю.",
+            "image": "https://picsum.photos/seed/client-dmytro/150/150",
+            "rating": 5
+          }
+        ]
+      },
+      "faq": {
+        "badge": "FAQ",
+        "title": "Часті запитання",
+        "subtitle": "Все, що потрібно знати перед початком співпраці.",
+        "items": [
+          {
+            "question": "Скільки часу займає розробка дизайн-проєкту?",
+            "answer": "В середньому розробка повного дизайн-проєкту для квартири площею 100 м² займає від 1.5 до 2 місяців. Терміни залежать від швидкості погодження етапів замовником."
+          },
+          {
+            "question": "Чи працюєте ви з об'єктами в інших містах/країнах?",
+            "answer": "Так, ми маємо досвід дистанційного проєктування та реалізації об'єктів у Європі. Для авторського нагляду можливі регулярні відрядження нашої команди."
+          },
+          {
+            "question": "Що входить у вартість авторського нагляду?",
+            "answer": "Регулярні виїзди на об'єкт (1-2 рази на тиждень), контроль відповідності робіт кресленням, внесення коригувань у креслення за необхідності, комунікація з підрядниками."
+          },
+          {
+            "question": "Чи можете ви порекомендувати будівельну бригаду?",
+            "answer": "Так, ми маємо перевірених партнерів-будівельників, з якими реалізували десятки проєктів. Вони знають наші високі стандарти якості."
+          },
+          {
+            "question": "Як формується бюджет на реалізацію?",
+            "answer": "Після затвердження 3D-візуалізацій ми складаємо детальний кошторис на всі матеріали, меблі та роботи. Ви бачите фінальну цифру до початку будівництва."
+          },
+          {
+            "question": "Чи проєктуєте ви розумний дім?",
+            "answer": "Так, ми інтегруємо системи 'Розумний дім' у наші проєкти, співпрацюючи з провідними інженерами в цій галузі."
+          },
+          {
+            "question": "Який мінімальний бюджет для початку роботи?",
+            "answer": "Ми беремо в роботу об'єкти від 50 м². Бюджет на реалізацію преміум-інтер'єру зазвичай стартує від $1500 за квадратний метр (включаючи роботи, матеріали та меблі)."
+          },
+          {
+            "question": "Чи можна замовити лише планувальне рішення?",
+            "answer": "Ми спеціалізуємося на комплексних рішеннях під ключ, тому не надаємо послуги часткового проєктування."
+          },
+          {
+            "question": "Як відбувається оплата?",
+            "answer": "Оплата розбивається на 4 етапи, прив'язані до здачі певних частин проєкту (планування, 3D, креслення, фінал)."
+          },
+          {
+            "question": "Чи використовуєте ви екологічні матеріали?",
+            "answer": "Це основа нашої філософії. Ми надаємо перевагу натуральному дереву, каменю, склу, металу та сертифікованим еко-фарбам."
+          }
+        ]
+      },
+      "ctaBanner": {
+        "title": "Готові створити простір вашої мрії?",
+        "subtitle": "Залиште заявку на безкоштовну консультацію з головним архітектором студії.",
+        "button": "Забронювати зустріч"
+      },
+      "contact": {
+        "badge": "Контакти",
+        "title": "Зв'яжіться з нами",
+        "subtitle": "Ми завжди відкриті до нових цікавих проєктів.",
+        "address": "вул. Хрещатик 15, Київ, Україна",
+        "phone": "+38 (044) 123-45-67",
+        "email": "hello@lumina-arch.com",
+        "formName": "Ваше ім'я",
+        "formPhone": "Номер телефону",
+        "formMessage": "Коротко про ваш об'єкт (площа, тип)",
+        "formSubmit": "Надіслати запит",
+        "formSuccess": "Дякуємо! Ми зв'яжемося з вами найближчим часом."
+      },
+      "footer": {
+        "description": "Студія преміальної архітектури та дизайну інтер'єру. Створюємо простори поза часом.",
+        "rights": "Всі права захищено."
+      }
+    },
+    "en": {
+      "meta": {
+        "title": "Lumina — Premium Architecture & Interior Design",
+        "description": "Biophilic design integrating natural light and sustainable materials with zero-compromise luxury. Kyiv.",
+        "lang": "en"
+      },
+      "nav": {
+        "about": "About",
+        "services": "Services",
+        "portfolio": "Portfolio",
+        "calculator": "Pricing",
+        "contact": "Contact"
+      },
+      "hero": {
+        "badge": "Architecture Studio",
+        "title": "Creating spaces that",
+        "titleItalic": "inspire",
+        "subtitle": "Biophilic design integrating natural light and sustainable materials with zero-compromise luxury.",
+        "ctaPrimary": "Discuss Project",
+        "ctaSecondary": "View Portfolio",
+        "stats": [
+          { "value": "12+", "label": "Years Experience" },
+          { "value": "150+", "label": "Completed Projects" }
+        ]
+      },
+      "socialProof": {
+        "title": "Trusted by leading brands and publications"
+      },
+      "about": {
+        "badge": "Philosophy",
+        "title": "The Art of Living in Harmony",
+        "subtitle": "We don't just design walls. We create environments that breathe with you, adapt to your rhythm, and energize every day.",
+        "text1": "Founded in 2012, Lumina studio united the best architects and visionaries of Kyiv. Our approach is based on biophilic design principles — a deep human connection with nature through natural materials, light, and forms.",
+        "text2": "Every project is a unique story written in the language of architecture. We handle the full cycle: from the first sketch to decor placement.",
+        "signature": "Olena Koval, Founder"
+      },
+      "services": {
+        "badge": "Expertise",
+        "title": "Our Services",
+        "subtitle": "Comprehensive solutions for premium residential and commercial properties.",
+        "items": [
+          {
+            "title": "Architectural Design",
+            "desc": "Conceptual solutions and working documentation for private residences.",
+            "image": "https://picsum.photos/seed/architecture-modern/800/1000"
+          },
+          {
+            "title": "Interior Design",
+            "desc": "Signature interiors reflecting your character and lifestyle.",
+            "image": "https://picsum.photos/seed/interior-luxury/800/1000"
+          },
+          {
+            "title": "Commercial Spaces",
+            "desc": "HoReCa, offices, and boutiques. Design that increases your business capitalization.",
+            "image": "https://picsum.photos/seed/commercial-space/800/1000"
+          }
+        ]
+      },
+      "whyUs": {
+        "badge": "Advantages",
+        "title": "Why Choose Lumina",
+        "subtitle": "Flawless service and attention to the smallest details at every stage of cooperation.",
+        "items": [
+          {
+            "title": "Author's Supervision",
+            "desc": "We control every stage of construction, ensuring 100% compliance with 3D visualizations."
+          },
+          {
+            "title": "Eco Materials",
+            "desc": "We use only certified natural materials: stone, wood, glass, and eco-friendly paints."
+          },
+          {
+            "title": "Accurate Estimates",
+            "desc": "Transparent financial reporting. You know the exact cost of realization before construction begins."
+          },
+          {
+            "title": "Turnkey Furnishing",
+            "desc": "Direct contracts with European furniture factories. Saving your time and budget."
+          }
+        ]
+      },
+      "calculator": {
+        "badge": "Estimation",
+        "title": "Project Cost Calculator",
+        "subtitle": "Get a preliminary estimate for your design project in seconds.",
+        "typeLabel": "Property Type",
+        "types": {
+          "residential": "Residential",
+          "commercial": "Commercial",
+          "hospitality": "HoReCa"
+        },
+        "styleLabel": "Style",
+        "styles": {
+          "minimalism": "Minimalism",
+          "classic": "Modern Classic",
+          "futuristic": "Futurism / High-tech"
+        },
+        "areaLabel": "Area (sq.m)",
+        "resultLabel": "Estimated Cost:",
+        "cta": "Get Exact Quote"
+      },
+      "process": {
+        "badge": "Process",
+        "title": "How We Create Masterpieces",
+        "subtitle": "A transparent and structured path from idea to finished object.",
+        "steps": [
+          {
+            "title": "Briefing & Concept",
+            "desc": "We meet at the site, discuss your wishes, lifestyle, and budget. Create a moodboard and layout solutions."
+          },
+          {
+            "title": "3D Visualization",
+            "desc": "Develop photorealistic visualizations of each room. You will see your future interior in detail."
+          },
+          {
+            "title": "Working Documentation",
+            "desc": "Prepare a full package of drawings for builders: electricity, plumbing, wall sweeps, nodes."
+          },
+          {
+            "title": "Realization & Furnishing",
+            "desc": "Author's supervision of construction, purchase of materials, furniture, and decor. Turnkey delivery."
+          }
+        ]
+      },
+      "beforeAfter": {
+        "badge": "Transformation",
+        "title": "Before & After",
+        "subtitle": "Drag the slider to see the magic of space transformation.",
+        "beforeLabel": "Before",
+        "afterLabel": "After",
+        "beforeImage": "https://picsum.photos/seed/raw-concrete-room/1200/800",
+        "afterImage": "https://picsum.photos/seed/luxury-living-room-finished/1200/800"
+      },
+      "gallery": {
+        "badge": "Portfolio",
+        "title": "Featured Works",
+        "subtitle": "Every project is a reflection of its owner's unique character.",
+        "items": [
+          { "url": "https://picsum.photos/seed/arch-1/800/800", "alt": "Forest Villa" },
+          { "url": "https://picsum.photos/seed/arch-2/800/1200", "alt": "Kyiv Penthouse" },
+          { "url": "https://picsum.photos/seed/arch-3/1200/800", "alt": "Restaurant" },
+          { "url": "https://picsum.photos/seed/arch-4/800/800", "alt": "IT Office" },
+          { "url": "https://picsum.photos/seed/arch-5/800/1000", "alt": "Minimalist Bedroom" },
+          { "url": "https://picsum.photos/seed/arch-6/1000/800", "alt": "Bathroom" }
+        ]
+      },
+      "video": {
+        "badge": "Atmosphere",
+        "title": "Feel the Space",
+        "subtitle": "A cinematic look at our best realizations.",
+        "posterUrl": "https://picsum.photos/seed/video-poster-arch/1600/900"
+      },
+      "team": {
+        "badge": "Team",
+        "title": "Space Creators",
+        "subtitle": "Architects and designers in love with their craft.",
+        "members": [
+          {
+            "name": "Olena Koval",
+            "role": "Lead Architect, Founder",
+            "bio": "15 years of experience in premium real estate design.",
+            "image": "https://picsum.photos/seed/architect-ceo/600/800"
+          },
+          {
+            "name": "Maksym Tkachenko",
+            "role": "Art Director",
+            "bio": "Expert in biophilic design and integration of natural forms.",
+            "image": "https://picsum.photos/seed/art-director-man/600/800"
+          },
+          {
+            "name": "Anna Boyko",
+            "role": "Lead Interior Designer",
+            "bio": "Master of working with light and natural stone textures.",
+            "image": "https://picsum.photos/seed/interior-designer-woman/600/800"
+          },
+          {
+            "name": "Igor Shevchenko",
+            "role": "Project Manager",
+            "bio": "Ensures perfect realization and adherence to deadlines.",
+            "image": "https://picsum.photos/seed/project-manager-man/600/800"
+          }
+        ]
+      },
+      "testimonials": {
+        "badge": "Reviews",
+        "title": "What Clients Say",
+        "subtitle": "We are proud that most new clients come to us by recommendation.",
+        "items": [
+          {
+            "name": "Victoria M.",
+            "role": "Penthouse Owner",
+            "quote": "The Lumina team exceeded all expectations. They didn't just do a good renovation, they created a space you don't want to leave. Every detail is thought out.",
+            "image": "https://picsum.photos/seed/client-vic/150/150",
+            "rating": 5
+          },
+          {
+            "name": "Andriy S.",
+            "role": "IT Company CEO",
+            "quote": "We were looking for a studio to design a new 1000 sq.m office. Lumina proposed a concept that perfectly reflects our company's spirit. The realization went without any stress.",
+            "image": "https://picsum.photos/seed/client-andriy/150/150",
+            "rating": 5
+          },
+          {
+            "name": "Oksana L.",
+            "role": "Restaurateur",
+            "quote": "The design of our new restaurant became a magnet for guests. The atmosphere, light, acoustics — everything works for a perfect customer experience. Thank you for your professionalism!",
+            "image": "https://picsum.photos/seed/client-oks/150/150",
+            "rating": 5
+          },
+          {
+            "name": "Dmytro K.",
+            "role": "Private Investor",
+            "quote": "I've been working with Lumina on my third project. Absolute trust in their taste and technical expertise. Author's supervision takes away 90% of my headache.",
+            "image": "https://picsum.photos/seed/client-dmytro/150/150",
+            "rating": 5
+          }
+        ]
+      },
+      "faq": {
+        "badge": "FAQ",
+        "title": "Frequently Asked Questions",
+        "subtitle": "Everything you need to know before starting cooperation.",
+        "items": [
+          {
+            "question": "How long does it take to develop a design project?",
+            "answer": "On average, developing a full design project for a 100 sq.m apartment takes 1.5 to 2 months. Timelines depend on the speed of client approvals."
+          },
+          {
+            "question": "Do you work with properties in other cities/countries?",
+            "answer": "Yes, we have experience in remote design and realization of projects in Europe. For author's supervision, regular business trips by our team are possible."
+          },
+          {
+            "question": "What is included in author's supervision?",
+            "answer": "Regular site visits (1-2 times a week), monitoring compliance of works with drawings, making adjustments to drawings if necessary, communication with contractors."
+          },
+          {
+            "question": "Can you recommend a construction crew?",
+            "answer": "Yes, we have trusted construction partners with whom we have realized dozens of projects. They know our high quality standards."
+          },
+          {
+            "question": "How is the realization budget formed?",
+            "answer": "After approving 3D visualizations, we compile a detailed estimate for all materials, furniture, and works. You see the final figure before construction begins."
+          },
+          {
+            "question": "Do you design smart homes?",
+            "answer": "Yes, we integrate 'Smart Home' systems into our projects, collaborating with leading engineers in this field."
+          },
+          {
+            "question": "What is the minimum budget to start working?",
+            "answer": "We take on projects from 50 sq.m. The budget for realizing a premium interior usually starts from $1500 per square meter (including works, materials, and furniture)."
+          },
+          {
+            "question": "Can I order only a layout solution?",
+            "answer": "We specialize in comprehensive turnkey solutions, so we do not provide partial design services."
+          },
+          {
+            "question": "How does payment work?",
+            "answer": "Payment is divided into 4 stages, tied to the delivery of certain parts of the project (layout, 3D, drawings, final)."
+          },
+          {
+            "question": "Do you use eco-friendly materials?",
+            "answer": "This is the foundation of our philosophy. We prefer natural wood, stone, glass, metal, and certified eco-paints."
+          }
+        ]
+      },
+      "ctaBanner": {
+        "title": "Ready to create the space of your dreams?",
+        "subtitle": "Leave a request for a free consultation with the studio's lead architect.",
+        "button": "Book a Meeting"
+      },
+      "contact": {
+        "badge": "Contact",
+        "title": "Get in Touch",
+        "subtitle": "We are always open to new interesting projects.",
+        "address": "15 Khreshchatyk St, Kyiv, Ukraine",
+        "phone": "+38 (044) 123-45-67",
+        "email": "hello@lumina-arch.com",
+        "formName": "Your Name",
+        "formPhone": "Phone Number",
+        "formMessage": "Briefly about your property (area, type)",
+        "formSubmit": "Send Request",
+        "formSuccess": "Thank you! We will contact you shortly."
+      },
+      "footer": {
+        "description": "Premium architecture and interior design studio. Creating timeless spaces.",
+        "rights": "All rights reserved."
+      }
+    }
+  }
+}

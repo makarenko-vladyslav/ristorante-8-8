@@ -1,0 +1,14 @@
+{
+  "currency": "₴",
+  "basePrices": {
+    "residential": 4500,
+    "commercial": 3800,
+    "hospitality": 5200
+  },
+  "multipliers": {
+    "minimalism": 1.0,
+    "classic": 1.25,
+    "futuristic": 1.4
+  },
+  "estimationLogic": "range"
+}
